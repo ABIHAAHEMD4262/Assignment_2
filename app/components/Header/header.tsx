@@ -1,14 +1,15 @@
 import React from 'react';
-import styles from './header.module.css';
+import Link from 'next/link';
+import styles from './Header.module.css';
 
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <h1>My Website</h1>
       <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact Us</a>
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/contact">Contact Us</Link>
       </nav>
     </header>
   );
